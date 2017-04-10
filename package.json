@@ -1,0 +1,25 @@
+{
+  "name": "nodetest",
+  "version": "1.0.0",
+  "description": "playing around with node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/russotx/nodetest.git"
+  },
+  "author": "me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/russotx/nodetest/issues"
+  },
+  "homepage": "https://github.com/russotx/nodetest#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "firebase-admin": "^4.2.0",
+    "passport": "^0.3.2",
+    "request": "^2.81.0"
+  }
+}
