@@ -1,4 +1,3 @@
-var firebase = require('firebase-admin');
 var request = require('request');
 var express = require('express');
 var app = express();
@@ -44,7 +43,6 @@ server.listen(port, (err) => {
 var API_KEY = "AIzaSyAwiUWpP21I3pAPdZExjgIj5ebtvFMjYrs"; // Your Firebase Cloud Messaging Server API key
 
 // Initialize the app with a service account, granting admin privileges
-
 var serviceAccount = require("/Users/Daniel/Projects/Bootcamp/nodetest/private/realtime-database-331a6-firebase-adminsdk-8a2d8-5f8b11dc59.json");
 
 admin.initializeApp({
