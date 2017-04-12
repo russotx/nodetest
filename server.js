@@ -1,7 +1,8 @@
-var request = require('request');
-var express = require('express');
+var request = require("request");
+var express = require("express");
 var app = express();
 var admin = require("firebase-admin");
+
 
 const http = require('http');  
 const port = 3000;
@@ -28,6 +29,7 @@ app.get('/', function(req, res, next){
 
 app.listen(3000);
 
+
 /*
 server.listen(port, (err) => {  
   if (err) {
@@ -38,7 +40,6 @@ server.listen(port, (err) => {
   console.log(`server is listening on ${port}`)
 })
 */
-
 
 var API_KEY = "AIzaSyAwiUWpP21I3pAPdZExjgIj5ebtvFMjYrs"; // Your Firebase Cloud Messaging Server API key
 
@@ -59,7 +60,7 @@ ref.once("value", function(snapshot) {
   console.log(snapshot.val());
 });
 
-var changed = false;
+var changed = true;
 db.ref('/Volunteers/testVol2/').update({smsOpt:changed});
 
 

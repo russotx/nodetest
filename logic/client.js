@@ -87,6 +87,14 @@ function isAuthorized(username, password) {
 
 
 
+/*****************************************
+*
+*       SMS FUNCTIONS
+* 
+******************************************/
+
+
+
 
 /*****************************************
 *
@@ -403,7 +411,7 @@ function recordVolHours(volData) {
     if (isValidSubmit(volData)) {
         // convert submission date integer mmddyyyy to a string 
         submissionDate = volData[3].toString();
-        newSubmission = {}
+        newSubmission = {};
         // add new hours to total hours
         var totalHours = volExistingHrs+volData[1]; 
         newSubmission['/Volunteers/'+volKey+'/totalHours/'] = totalHours;
